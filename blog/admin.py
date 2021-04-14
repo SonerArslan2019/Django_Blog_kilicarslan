@@ -24,3 +24,5 @@ class YorumAdmin(admin.ModelAdmin):
 class IletisimAdmin(admin.ModelAdmin):
     list_display = ('email', 'olusturulma_tarihi')
     search_fields = ('email',)
+
+#### modeller tamamlandi
