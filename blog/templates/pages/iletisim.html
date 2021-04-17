@@ -1,10 +1,15 @@
 {% extends 'base.html' %}
+{% load crispy_forms_tags %}
 
 {% block title %} Anasayfa {% endblock %}
 
 {% block content %}
-
-iletisim sayfasi
-    {{ sayi }}
+    <form method="POST">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <input type="submit" class="btn btn-info mt-3 mb-3" value="Gonder"/>
+    </form>
 
 {% endblock %}
+
+
