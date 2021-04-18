@@ -19,7 +19,12 @@
                 <th scope="row">{{ yazi.id }}</th>
                 <td>{{ yazi.baslik }}</td>
                 <td>{{ yazi.duzenlenme_tarihi }}</td>
-                <td>Aksiyonlar Gelecek</td>
+                <td>
+                    <p>
+                        <a class="btn btn-warning" href="{% url 'yazi-guncelle' slug=yazi.slug %}">Duzenle</a>
+                        <a class="btn btn-primary" href="{% url 'yazi-sil' slug=yazi.slug %}">Yazi Sil</a>
+                    </p>
+                </td>
             </tr>
 
         {% empty %}
