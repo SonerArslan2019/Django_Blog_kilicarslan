@@ -45,13 +45,7 @@
         <p>Yorum Yapmak icin Lutfen UYE GIRISI yapiniz.</p>
     {% endif %}
 
-    {% if messages %}
-        <div class="alert alert-success" role="alert">
-            {% for message in messages %}
-                {{ message }}
-            {% endfor %}
-        </div>
-    {% endif %}
+{% include 'components/mesagge.html' %}
 
 {#    birseyler#}
 

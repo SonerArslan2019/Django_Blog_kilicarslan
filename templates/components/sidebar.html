@@ -10,7 +10,7 @@
                     Profil Duzenle
                 </li>
                 <li class="list-group-item">
-                    Sifre Degistir
+                    <a href="{% url 'sifre-degistir' %}">Sifre Degistir</a>
                 </li>
                 <li class="list-group-item">
                     <a href="{% url 'yazi-ekle' %}">Yazi Ekle</a>
@@ -19,7 +19,7 @@
                     <a href="{% url 'yazilarim' %}">Yazilarim</a>
                 </li>
                 <li class="list-group-item">
-                    Cikis Yap
+                    <a href="{% url 'cikis' %}">Cikis Yap</a>
                 </li>
             </ul>
         {% else %}
