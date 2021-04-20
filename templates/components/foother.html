@@ -1,5 +1,8 @@
-    <div class="row">
-        <div class="col-12">
-            <p>Tum Haklari Saklidir</p>
-        </div>
+<div class="row">
+    <div class="col-12">
+        <p>Tum Haklari Saklidir.</p>
+        {% if not request.user.is_authenticated %}
+            <a href="{% url 'giris' %}">Giris</a> | <a href="{% url 'kayit' %}">Kayit</a>
+        {% endif %}
     </div>
+</div>
